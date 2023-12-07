@@ -1,1 +1,1 @@
-Hello, Conventioanl Commits!
+Hello, Conventional Commits!
