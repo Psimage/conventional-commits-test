@@ -1,0 +1,18 @@
+name: conventional-pr-action
+
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+
+jobs:
+  validate-pr:
+    name: Validate PR
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check PR title
+        uses: Psimage/conventional-pr-action@v1 # Commit with the `v1` tag
+        with:
+          allowed-types: '["feat", "fix", "docs", "style", "refactor", "perf", "test", "build", "ci", "chore", "revert", "dependencies"]'

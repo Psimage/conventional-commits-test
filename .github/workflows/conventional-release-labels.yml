@@ -1,5 +1,5 @@
-# Warning, do not check out untrusted code with
-# the pull_request_target event.
+name: conventional-release-labels
+
 on:
   pull_request:
     types: [opened, edited]
@@ -8,7 +8,6 @@ permissions:
   pull-requests: write
   contents: read
 
-name: conventional-release-labels
 jobs:
   label:
     runs-on: ubuntu-latest
